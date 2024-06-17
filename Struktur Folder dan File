@@ -1,0 +1,30 @@
+tutorial-web-dev-complete/
+├── README.md
+├── html/
+│   ├── introduction.md
+│   ├── basic-tags.md
+│   ├── forms.md
+│   ├── semantic-html.md
+├── css/
+│   ├── introduction.md
+│   ├── selectors.md
+│   ├── flexbox.md
+│   ├── grid.md
+│   ├── responsive-design.md
+├── javascript/
+│   ├── introduction.md
+│   ├── basics.md
+│   ├── dom-manipulation.md
+│   ├── events.md
+│   ├── es6-features.md
+├── frontend-frameworks/
+│   ├── introduction.md
+│   ├── react.md
+│   ├── vue.md
+│   ├── angular.md
+└── deployment/
+    ├── introduction.md
+    ├── github-pages.md
+    ├── netlify.md
+    ├── vercel.md
+
