@@ -1,0 +1,176 @@
+# Introduction to HTML
+
+HTML (HyperText Markup Language) adalah bahasa dasar yang digunakan untuk membuat struktur halaman web. Ini adalah langkah pertama dalam membuat website.
+
+## Struktur Dasar HTML
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+**html/basic-tags.md**
+```markdown
+# Basic HTML Tags
+
+Berikut adalah beberapa tag dasar dalam HTML:
+
+- `<h1>` to `<h6>`: Header tags
+- `<p>`: Paragraph tag
+- `<a>`: Anchor tag
+- `<img>`: Image tag
+- `<ul>` and `<ol>`: List tags
+- `<div>` and `<span>`: Division and Span tags
+
+## Contoh Penggunaan
+```html
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<a href="https://www.example.com">This is a link</a>
+<img src="image.jpg" alt="Example Image">
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+#### 3.2 CSS
+**css/introduction.md**
+```markdown
+# Introduction to CSS
+
+CSS (Cascading Style Sheets) digunakan untuk mendesain dan menata halaman web. Dengan CSS, Anda dapat mengatur warna, font, layout, dan elemen visual lainnya.
+
+## Contoh Penggunaan CSS
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+**css/selectors.md**
+```markdown
+# CSS Selectors
+
+Selectors digunakan untuk memilih elemen HTML yang ingin Anda style. Berikut adalah beberapa selector dasar:
+
+- Element Selector: `p { }`
+- ID Selector: `#id { }`
+- Class Selector: `.class { }`
+- Attribute Selector: `[attribute=value] { }`
+
+## Contoh Penggunaan
+```html
+<style>
+    p {
+        color: red;
+    }
+    #unique {
+        font-size: 20px;
+    }
+    .highlight {
+        background-color: yellow;
+    }
+</style>
+<p>This is a paragraph.</p>
+<p id="unique">This is a unique paragraph.</p>
+<p class="highlight">This is a highlighted paragraph.</p>
+
+#### 3.3 JavaScript
+**javascript/introduction.md**
+```markdown
+# Introduction to JavaScript
+
+JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif. Dengan JavaScript, Anda dapat mengubah konten, memanipulasi elemen DOM, dan menambahkan logika pada situs web.
+
+## Contoh Penggunaan JavaScript
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1 id="greeting">Hello, World!</h1>
+    <button onclick="changeGreeting()">Click me</button>
+
+    <script>
+        function changeGreeting() {
+            document.getElementById("greeting").innerText = "Hello, JavaScript!";
+        }
+    </script>
+</body>
+</html>
+
+**javascript/dom-manipulation.md**
+```markdown
+# DOM Manipulation
+
+JavaScript dapat digunakan untuk memanipulasi DOM (Document Object Model) untuk mengubah konten dan struktur halaman web.
+
+## Contoh Manipulasi DOM
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <h1 id="title">Original Title</h1>
+    <button onclick="changeTitle()">Change Title</button>
+
+    <script>
+        function changeTitle() {
+            document.getElementById("title").innerText = "New Title";
+        }
+    </script>
+</body>
+</html>
+
+#### 3.4 Deployment
+**deployment/introduction.md**
+```markdown
+# Introduction to Deployment
+
+Deployment adalah proses mengunggah website Anda ke server agar bisa diakses oleh pengguna melalui internet. Ada beberapa layanan hosting yang bisa Anda gunakan, seperti GitHub Pages, Netlify, dan Vercel.
+
+## GitHub Pages
+GitHub Pages adalah layanan hosting yang disediakan oleh GitHub untuk meng-hosting situs web statis langsung dari repositori GitHub Anda.
+
+## Netlify
+Netlify adalah layanan hosting yang menawarkan berbagai fitur seperti continuous deployment, custom domains, dan serverless functions.
+
+## Vercel
+Vercel adalah platform yang dirancang untuk meng-deploy situs web dan aplikasi web dengan cepat dan mudah, mendukung berbagai framework frontend seperti React, Vue, dan Svelte.
+# Deploying with GitHub Pages
+
+Untuk meng-deploy website Anda menggunakan GitHub Pages:
+
+1. Buka repositori GitHub Anda.
+2. Pergi ke "Settings".
+3. Scroll ke bawah ke bagian "GitHub Pages".
+4. Di bagian "Source", pilih branch `main` dan folder root (`/`).
+5. Klik "Save".
+
+Setelah itu, GitHub akan memberikan URL untuk mengakses situs web Anda, biasanya berupa `https://<username>.github.io/<repository-name>`.
+
